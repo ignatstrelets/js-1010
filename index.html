@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>form_abc</title>
+</head>
+<body>
+<p>Принадлежит ли целое С диапазону A-B? Если принадлежит - отправить все на сервер</p>
+<form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+  <ul>
+    <li>a: <input id="a" name="a"  type="number" ></li>
+    <li>b: <input id="b" name="b"  type="number" ></li>
+    <li>x: <input id="x" name="x"  type="number" ></li>
+    <li>Проверить: <input id="verify" type="button" onclick=verify_abx() value="Проверить"></li>
+    <li>Отправить: <input id="send" type="button" value="Отправить"></li>
+  </ul>
+</form>
+<p id="result">Результат</p>
+<script src="./js/1010_abx.js"></script>
+</body>

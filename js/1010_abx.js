@@ -9,5 +9,12 @@ function verify_abx() {
   } else {
     result.innerHTML = 'Неверно';
   }
-  fetch('https://google.com?a=' + a + '?b=' + b + '?x=' + x) .then(response => response.json()) .then(data => console.log(data)) .catch(error => console.error(error)); 
+}
+
+function send() {
+  var a = parseInt(document.getElementById("a").value);
+  var b = parseInt(document.getElementById("b").value);
+  var x = parseInt(document.getElementById("x").value);
+  var result = document.getElementById('result');
+  fetch('https://google.com?a=' + a + '?b=' + b + '?x=' + x + '?result=' + result) .then(response => response.json()) .then(data => console.log(data)) .catch(error => console.error(error)); 
 }

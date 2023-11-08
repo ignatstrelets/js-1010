@@ -9,6 +9,5 @@ function verify_abx() {
   } else {
     result.innerHTML = 'Неверно';
   }
-  //Здесь может быть код для отправки значений переменных a, b, x
-  //на удалённый сервер заданным способом.
+  fetch('https://google.com?a=' + a + '?b=' + b + '?x=' + x) .then(response => response.json()) .then(data => console.log(data)) .catch(error => console.error(error)); 
 }
